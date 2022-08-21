@@ -1,0 +1,13 @@
+.cards-wrapper {
+  display: flex;
+  position: relative;
+  width: 144px;
+  height: 144px;
+}
+
+.card-item {
+  width: 144px;
+  height: 144px;
+  transition: transform 0.3s ease;
+  position: absolute;
+}
