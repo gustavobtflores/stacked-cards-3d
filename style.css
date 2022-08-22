@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .cards-wrapper {
   display: flex;
   position: relative;
@@ -10,4 +16,19 @@
   height: 144px;
   transition: transform 0.3s ease;
   position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 4px;
+}
+
+.card-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00000026;
+  display: block;
+  cursor: pointer;
+}
+
+.card-dot.active {
+  background-color: #2cbadd;
 }

@@ -9,15 +9,33 @@
   </head>
   <body>
     <div class="cards-wrapper">
-      <img class="card-item" src="/assets/image1.jpg" alt="" />
+      <img class="card-item active" src="/assets/image1.jpg" alt="" />
       <img class="card-item" src="/assets/image2.jpg" alt="" />
       <img class="card-item" src="/assets/image3.jpg" alt="" />
       <img class="card-item" src="/assets/image4.jpg" alt="" />
       <img class="card-item" src="/assets/image5.jpg" alt="" />
       <img class="card-item" src="/assets/image6.jpg" alt="" />
     </div>
-    <button id="previous">Previous</button>
-    <button id="next" style="margin-top: 4rem">Next</button>
+    <div
+      style="
+        display: flex;
+        gap: 8px;
+        max-width: 144px;
+        justify-content: center;
+        margin-top: 1rem;
+      "
+    >
+      <span class="card-dot active"></span>
+      <span class="card-dot"></span>
+      <span class="card-dot"></span>
+      <span class="card-dot"></span>
+      <span class="card-dot"></span>
+      <span class="card-dot"></span>
+    </div>
+    <div>
+      <button id="previous">Previous</button>
+      <button id="next" style="margin-top: 4rem">Next</button>
+    </div>
   </body>
   <script src="/main.js"></script>
 </html>
